@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zcars</title>
+    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="by Andrey Karnaukh">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136511165-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-136511165-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N7SR2JM');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/components/scrollup.js"></script>
+    <script src="/js/plugins/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7SR2JM"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="wrap">
+                    <div class="header-top">
+                        <div class="logo">
+                            <a href="/uk" class="logo__link">
+                                <img src="/img/logo.png" alt="Zcars" class="logo__img">
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <div class="contact__town town">
+                                <p class="town__text contact_mright">Выберите город:</p>
+                                <div class="sel">
+                                    <label for="selectown" class="sel__label">
+                                    <select id="selectown" name="town" class="sel__select">
+                                        <option selected>Одесса, ул. Троицкая, 28, офис 306</option>
+                                    </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contact__tel">
+                                <div class="contact__tel-wrap contact_mright">
+                                    <a href="tel:0487998868" class="contact__link">048 700-88-68</a>
+                                    <a href="tel:0687008868" class="contact__link">068 700-88-68</a>
+                                </div>
+                                <div class="contact__tel-wrap contact_tel-margin">
+                                    <a href="tel:0737008868" class="contact__link contact_viber">073 700-88-68</a>
+                                    <a href="tel:0667008868" class="contact__link">066 700-88-68</a>
+                                </div>
+                                <div class="contact__tel-wrap contact_nullmargin contact_tel-margin">
+                                    <p class="contact__text">с 8-00 до 21-00</p>
+                                    <p class="contact__text">без выходных</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <div class="lang">
+                                <a href="/uk" class="lang__ link lang_active">Укр</a>
+                                <div class="lang__blank"></div>
+                                <a href="/" class="lang__link">Рус</a>
+                            </div>
+                            <div class="soc-icons">
+                                <a href="https://t.me/Zcars_ua" class="soc-icons__link">
+                                    <img src="/img/svg/zcars_telegram_40x40.svg" alt="zcars in telegram" class="soc-icons_telegram">
+                                </a>
+                                <a href="https://www.facebook.com/Zcarsua" class="soc-icons__link">
+                                    <img src="/img/svg/zcars_fb_40x40.svg" alt="zcars in facebook"  class="soc-icons_fb">
+                                </a>
+                                <a href="https://www.instagram.com/zcars_ua/" class="soc-icons__link">
+                                    <img src="/img/svg/zcars_instagr_40x40.svg" alt="zcars in instagram"  class="soc-icons_insta">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrap">
+                <div class="header-center header-center_padding">
+                    <img src="/img/header-back.png" alt="zcars" class="header-center__img">
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__wrap">
+                        <h1 class="caption">АВТО из США <span class="caption_red">от $6000</span></h1>
+                        <h2 class="caption__second">с ремонтом и регистрацией</h2>
+                    </div>
+                    <a href="#contact-us-duo" class="button button_margin popup-with-form">ЗАКАЗАТЬ АВТО <br> из США</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <a href="" id="upBtn" class="main__upBtn"></a>
+        <div class="main__back"></div>
+        <div class="container">
+            <div class="wrap">
+                <div class="services">
+                    <section class="serv-card serv-card_mside">
+                        <div class="serv-card__star serv-card_blue">
+                            <img src="/img/svg/zcars_star_74x74.svg" alt="Услуга «ПОД КЛЮЧ»">
+                        </div>
+                        <h2 class="serv-card__title title_fweight serv-card_mtop">Услуга <span class="serv-card_bold">«ПОД КЛЮЧ»</span></h2>
+                        <div class="tape tape_white ">
+                            <p class="tape__text">Полное сопровождение</p>
+                        </div>
+                        <a href="#contact-us-duo" class="serv-card__link popup-with-form">Узнать подробнее</a>
+                    </section>
+                    <section class="serv-card serv-card_mside">
+                        <div class="serv-card__star serv-card_red">
+                            <img src="/img/svg/zcars_star_74x74.svg" alt="Услуга «ДО ПОРТА»">
+                        </div>
+                        <h2 class="serv-card__title title_fweight serv-card_mtop">Услуга <span class="serv-card_bold">«ДО ПОРТА»</span></h2>
+                        <div class="tape tape_blue">
+                            <p class="tape__text ">Всего за <span class="serv-card_bold tape_bg">$399</span></p>
+                        </div>
+                        <a href="#contact-us-duo" class="serv-card__link popup-with-form">Узнать подробнее</a>
+                    </section>
+                </div>
+                <div class="steps">
+                    <h2 class="title">Порядок нашей работы:</h2>
+                    <div class="step-items steps__wrap steps_mbottom">
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_work_01_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap ">
+                               <p class="step-item__text step-item_rpadding">Подбор авто и расчет цены</p>
+                               <div class="step-item__arrow">
+                                   <img src="/img/svg/zcars_arrow_12x55.svg" alt="arrow" class="step-item_after">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_work_02_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap">
+                                <p class="step-item__text step-item_rpadding">Заключение договора, участие в аукционе</p>
+                                <div class="step-item__arrow">
+                                    <img src="/img/svg/zcars_arrow_12x55.svg" alt="arrow" class="step-item_after">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_work_03_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap">
+                                <p class="step-item__text step-item_rpadding">Доставка в порт Одессы</p>
+                                <div class="step-item__arrow">
+                                    <img src="/img/svg/zcars_arrow_12x55.svg" alt="arrow" class="step-item_after">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_work_04_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap">
+                                <p class="step-item__text step-item_rpadding">Экспедирование и растаможивание</p>
+                                <div class="step-item__arrow">
+                                    <img src="/img/svg/zcars_arrow_12x55.svg" alt="arrow" class="step-item_after">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_work_05_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap ">
+                                <p class="step-item__text step-item_rpadding">Диагностика и ремонт</p>
+                                <div class="step-item__arrow">
+                                    <img src="/img/svg/zcars_arrow_12x55.svg" alt="arrow" class="step-item_after">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item step-item_npadding step-item_max">
+                            <img src="/img/svg/zcars_work_06_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item__wrap">
+                                <p class="step-item__text">Сертифицирование и постановка на учёт</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="title title_fweight title_red">В результате <span class="title_bold">вы получаете:</span></h2>
+                    <div class="step-items steps__wrap">
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_01_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Квалифицированный <br> подбор авто, проверка через системы CARFAX, AUTOCHECK, EPICVIN</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_02_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Официальный юридический договор и поэтапная оплата</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_03_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Минимальный сбор аукциона и стоимость доставки</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_04_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Страховка авто по всему пути: Аукцион — Одесса</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_05_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Быстрая растаможка с опытными экспедиторами и брокерами</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <img src="/img/svg/zcars_get_it_06_100x75.svg" alt="Подбор авто и расчет цены" class="step-item__img">
+                            <div class="step-item_mwidth">
+                                <p class="step-item__text">Качественный ремонт на партнёрских СТО</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact-us-duo" class="button button_small popup-with-form">Подобрать авто <br> БЕСПЛАТНО</a>
+                </div>
+                <div class="cars">
+                    <div class="cars__wrap" id="cars-card">
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/1-1-2016_chevrolet_cruze-limited_sedan_2lt_tds_evox_3_815.jpg" alt="Chevrolet Cruze" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Chevrolet Cruze</h2>
+                            <p class="car-card__price">6000</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/1-2-2014_ford_fiesta_4dr-hatchback_se_tds_evox_7_815.jpg" alt="Ford Fiesta" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Ford Fiesta</h2>
+                            <p class="car-card__price">6000</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/1-3-2017_ford_focus_sedan_se_tds_evox_2_815.jpg" alt="Ford Focus" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Ford Focus</h2>
+                            <p class="car-card__price">6200</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/2-1-2013_mazda_mazda3_sedan_i-sport_tds_evox_3_815.jpg" alt="Mazda 3" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Mazda 3</h2>
+                            <p class="car-card__price">6600</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/2-2-2013_volkswagen_jetta_sedan_se_tds_evox_4_815.jpg" alt="Volkswagen Jetta" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Volkswagen Jetta</h2>
+                            <p class="car-card__price">7100</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>      
+                        <section class="car-card">
+                            <div class="car-card__wrap">
+                                <img src="/img/2-3-2016_hyundai_elantra_sedan_value-edition_tds_evox_7_815.jpg" alt="Hyundai Elantra" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Hyundai Elantra</h2>
+                            <p class="car-card__price">7400</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/3-1-2017_hyundai_accent_sedan_se_tds_evox_3_815.jpg" alt="Hyundai Accent" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Hyundai Accent</h2>
+                            <p class="car-card__price">7000</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/3-2-2013_kia_soul_wagon_plus_tds_evox_2_815.jpg" alt="Kia Soul" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Kia Soul</h2>
+                            <p class="car-card__price">7000</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/3-3-2013_hyundai_elantra-gt_4dr-hatchback_base_tds_evox_3_815.jpg" alt="Hyundai Elantra GT (i30)" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Hyundai Elantra GT (i30)</h2>
+                            <p class="car-card__price">7400</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/4-1-2014_kia_rio_sedan_lx_tds_evox_1_815.jpg" alt="Kia Rio" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Kia Rio</h2>
+                            <p class="car-card__price">6300</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/4-2-2013_volkswagen_beetle_2dr-hatchback_25l_tds_evox_4_815.jpg" alt="Volkswagen Beetle" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Volkswagen Beetle</h2>
+                            <p class="car-card__price">7500</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                        <section class="car-card car-card_hide">
+                            <div class="car-card__wrap">
+                                <img src="/img/4-3-2012_nissan_leaf_4dr-hatchback_sl_tds_evox_1_815.jpg" alt="Nissan Leaf" class="car-card__img">
+                            </div>
+                            <h2 class="car-card__caption">Nissan Leaf</h2>
+                            <p class="car-card__price">8000</p>
+                            <div class="round-button">
+                                <a href="#contact-us-duo" class="round-button__link round-button_white popup-with-form">Узнать  подробнее</a>
+                            </div> 
+                        </section>
+                    </div>
+                    <div class="round-button">
+                        <a href="#contact-us-duo" id="showCars" class="round-button__link round-button_orange">Больше авто</a>
+                    </div> 
+                </div>
+                <div class="telegram">
+                    <div class="telegram__wrap">
+                        <h2 class="title title_red title_big">Самые актуальные предложения</h2>
+                        <p class="telegram__text">по авто в нашем Telegram-канале! </p>
+                        <p class="telegram__text"><span class="boldOpenSans">Подпишитесь</span> и будьте в курсе <span class="boldOpenSans">горячих новинок!</span></p>
+                    </div>
+                    <a href="https://t.me/Zcars_ua" class="telegram__logo telegram_margin">
+                        <img src="/img/telegram.png" alt="Подписаться на канал в Telegram" class="telegram__img">
+                        <p class="telegram__link-text">Подписаться на канал</p>
+                    </a>
+                </div>
+                <section class="cont">
+                    <h2 class="title textCenter">Возникли вопросы?</h2>
+                    <div class="cont-cards">
+                        <div class="cont-card serv-card ">
+                            <div class="serv-card__star serv-card_blue">
+                                <img src="/img/svg/zcars_phone_74x74.svg" alt="Услуга «ПОД КЛЮЧ»">
+                            </div>
+                            <h2 class="cont-card__text title title_red">Звоните</h2>
+                            <p class="cont-card__text">или оставьте заявку</p>
+                        </div>
+                        <div class="cont-card serv-card ">
+                            <div class="serv-card__star serv-card_blue">
+                                <img src="/img/svg/zcars_mail_74x74.svg" alt="Услуга «ПОД КЛЮЧ»">
+                            </div>
+                            <h2 class="cont-card__text title title_red">Пишите</h2>
+                            <p class="cont-card__text">на Вайбер или почту</p>
+                        </div>
+                        <div class="cont-card serv-card ">
+                            <div class="serv-card__star serv-card_blue">
+                                <img src="/img/svg/zcars_mapa_74x74.svg" alt="Услуга «ПОД КЛЮЧ»">
+                            </div>
+                            <h2 class="cont-card__text title title_red">Приходите</h2>
+                            <p class="cont-card__text">в наш офис</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-form" id="contact-us">
+                    <h2>Оставьте контакты для связи:</h2>
+                    <form name="contactus" id="contactus" action="https://api.zina.com.ua/send_form" method="post">
+                        <ul class="contactus__list">
+                            <li class="contactus__item">
+                                <label for="contact-name"></label>
+                                <input name="field_first-name" type="text" placeholder="Имя" id="contact-name" class="contactus__input contactus_outline" required>
+                            </li>
+                            <li class="contactus__item">
+                                <label for="contact-tel-ru"></label>
+                                <input name="field_phone" type="tel" placeholder="Контактный телефон" id="contact-tel-ru" class="contactus__input contactus_outline contactus__tel" required>
+                            </li>
+                            <li class="contactus__item  contactus_mtop">
+                                <input type="submit" value="Связаться со мной" id="contact-send2" class="button contactus__send contactus_outline ">
+                                <div class="ajax-progress" style="display: none;"></div>
+                                <div class="result-message" style="display: none;">Ваш запрос принят. Мы свяжемся с вами в ближайшее время.</div>
+                            </li>
+                        </ul>
+                        <input type="text" name="username" style="display: none;" />
+                        <input type="hidden" name="mail_to" value="info@zcars.com.ua" />
+                        <input type="hidden" name="label_field_first-name" value="Имя" />
+                        <input type="hidden" name="label_field_phone" value="Контактный телефон" />
+                        <input type="hidden" name="form_title" value="Обратный звонок" />
+                    </form>
+                </section>
+                <section class="contact-form-duo white-popup-block mfp-hide" id="contact-us-duo">
+                    <h2>Оставьте контакты для связи:</h2>
+                    <form name="contactus" id="contactus-sec" action="https://api.zina.com.ua/send_form" method="post">
+                        <ul class="contactus__list">
+                            <li class="contactus__item">
+                                <label for="contact-name"></label>
+                                <input name="field_first-name" type="text" placeholder="Имя" id="contact-name" class="contactus__input contactus_outline" required>
+                            </li>
+                            <li class="contactus__item">
+                                <label for="contact-tel-ru"></label>
+                                <input name="field_phone" type="tel" placeholder="Контактный телефон" id="contact-tel-ru" class="contactus__input contactus_outline contactus__tel" required>
+                            </li>
+                            <li class="contactus__item  contactus_mtop">
+                                <input type="submit" value="Связаться со мной" id="contact-send" class="button contactus__send contactus_outline ">
+                                <div class="ajax-progress" style="display: none;"></div>
+                                <div class="result-message" style="display: none;">Ваш запрос принят. Мы свяжемся с вами в ближайшее время.</div>
+                            </li>
+                        </ul>
+                        <input type="text" name="username" style="display: none;" />
+                        <input type="hidden" name="mail_to" value="info@zcars.com.ua" />
+                        <input type="hidden" name="label_field_first-name" value="Имя" />
+                        <input type="hidden" name="label_field_phone" value="Контактный телефон" />
+                        <input type="hidden" name="form_title" value="Обратный звонок" />
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.5820076746277!2d30.7386474155916!3d46.476786879126024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319c61482b41%3A0xd1f67ca0bb475746!2z0YPQuy4g0KLRgNC-0LjRhtC60LDRjywgMjgsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1552316205539&language=ru" style="border:0" allowfullscreen class="map__frame"></iframe>
+            </div>
+            <div class="fcontact fcontact_padding">
+                <div class="fsocial fsocial_padding">
+                    <div class="fsocial__wrap">
+                        <a href="https://t.me/Zcars_ua" class="fsocial__item">
+                            <img src="/img/f-telegram.png" alt="zcars in telegram" class="">
+                        </a>
+                        <a href="https://www.facebook.com/Zcarsua" class="fsocial__item">
+                            <img src="/img/f-facebook.png" alt="zcars in facebook"  class="">
+                        </a>
+                        <a href="https://www.instagram.com/zcars_ua/" class="fsocial__item">
+                            <img src="/img/f-insta.png" alt="zcars in insagram"  class="">
+                        </a>
+                    </div>
+                </div>
+                <div class="fcontact__item ftel">
+                    <div class="fcontact__tel">
+                        <img src="/img/svg/zcars_phone_footer_42x42.svg" alt="call us" class="ftel__icon">
+                        <div class="contact__tel-wrap">
+                            <a href="tel:0487998868">048 700-88-68</a>
+                            <a href="tel:0687008868">068 700-88-68</a>
+                        </div>
+                    </div>
+                    <div class="contact__tel-wrap contact_fwrap">
+                        <a href="tel:0737008868" class="contact_fviber">073 700-88-68</a>
+                        <a href="tel:0667008868" >066 700-88-68</a>
+                    </div>
+                </div>
+                <div class="fcontact__item fmail">
+                    <img src="/img/svg/zcars_mail_footer_42x30.svg" alt="call us" class="ftel__icon">
+                    <a href="mailto:info@zcars.com.ua">info@zcars.com.ua</a>
+                </div>
+                <div class="fcontact__item fmap">
+                    <img src="/img/svg/zcars_mape_footer_42x55.svg" alt="call us" class="ftel__icon">
+                    <p>Одесса, ул. Троицкая, 28, офис 306 с 8-00 до 21-00, без выходных</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container wrap fbottom">
+                <div class="copy fbottom__item">
+                    <p>2019 &copy; zcars.com.ua Всі права захищено.</p>
+                </div>
+                <div class="zina fbottom__item">
+                    <img src="/img/zina.png" alt="Zina design" class="zina__img" >
+                    <p>Створення сайту: &copy; 2019 <a href="https://www.zina.design/" class="zina__link">Студія «Зіна дизайн»,</a>Дніпро</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+.header{
+    width: 100%;
+    @extend %openSansRegular;
+    color: $baseTextBlue;
+    padding-bottom: 90px;
+    background: $baseWhite;
+}
+.header-top{
+    @extend %baseFlex;
+    @extend %spaceBetween;
+    align-items: flex-start;
+    padding: 35px 0 35px 20px;
+
+}
+
+.header-wrapper{
+    background: #f4f4f4;
+}
+
+.header-center{
+    @extend %baseFlex;
+    justify-content: flex-end;
+    &_padding{
+        padding: 50px 0;
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.header-bottom{
+    @extend %baseFlex;
+    @extend %flexFullCenter;
+}
+
+.logo{
+    &__link{
+        display: inline-block;
+    }
+}
+.contact{
+    &_tel-margin{
+        margin: 8px 10px 0px 15px;
+    }
+    &_mright{
+        margin-right: 25px;
+    }
+    &_nullmargin{
+        margin-right: 0;
+    }
+    &_viber{
+        @extend %basePosition;
+        &::before{
+            content: "";
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left: -20px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: #7f4da0;
+            border-radius: 50%;
+            @include backImg('img/svg/zcars_viber_16x16.svg',100%,center);
+        }
+    }
+    &_fviber{
+        @extend %basePosition;
+        &::before{
+            content: "";
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left: -40px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #7f4da0;
+            border-radius: 50%;
+            @include backImg('img/svg/zcars_viber_16x16.svg',100%,center);
+        } 
+    }
+    &_fwrap{
+        padding-left: 30px;
+    }
+    &__link{
+        @extend %openSansBold;
+        @extend %baseTransition;
+        font-size: (20em / 16);
+        letter-spacing: 1px;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    &__tel{
+        @extend %baseFlex;
+        //@extend %flexAlignCenter;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__tel-wrap{
+        @extend %baseFlex;
+        @extend %columnFlex;
+
+    }
+    &__town{
+        @extend %baseFlex;
+        @extend %flexAlignCenter;
+    }
+}
+
+.social{
+    @extend %baseFlex;
+    @extend %columnFlex;
+    @extend %spaceBetween;
+    align-self: stretch;
+    padding: 5px 0;
+}
+
+.lang{
+    @extend %baseFlex;
+    justify-content: flex-end;
+    align-items: center;
+    &_active{
+        color: $selectColor;
+    }
+    &__blank{
+        background: #000;
+        margin: 0 15px;
+        width: 1px;
+        height: 17px;
+    }
+}
+
+.soc-icons{
+    @extend %baseFlex;
+    padding: 15px 0 0;
+    &_telegram{
+        background-color: #33aade;
+    }
+    &_fb{
+        background-color: #003366;
+    }
+    &_insta{
+        background-color: #be0000;
+    }
+    &__link{
+        @extend %baseTransition;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 16px;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
+
+.town{
+    &__text{
+        @extend %openSansItalic;
+    }
+}
+
+.sel{
+    @extend %basePosition;
+    margin-left: 10px;
+    border-bottom: 1px dashed #000;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: -5px;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+        @include backImg('img/down-arrrow.png',70%,center);
+        background-position-y: 13px;
+    }
+    &__label{
+        position: relative;
+        display: block;
+        max-width: 310px;
+        min-width: 180px;
+        margin: 0 auto;
+        border-width: 0px;
+        background-color: transparent   ;
+        z-index: 10;
+    }
+    &__select{
+        border: none;
+        outline: none;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        padding: 5px 34px 5px 0px;
+        font-size: 16px;
+        font-weight: 300;
+        color: $selectColor;
+        cursor: pointer;
+    }
+}
+.caption{
+    @extend %openSansBold;
+    font-size: (50em / 16);
+    &_red{
+        color: $selectColor;
+    }
+    &__second{
+        font-size: (38em / 16);
+        letter-spacing: 1.8px;
+    }
+}
+
+.button{
+    @extend %inlineFlex;
+    @extend %flexFullCenter;
+    @extend %textCenter;
+    @extend %openSansBold;
+    @extend %baseTransition;
+    @extend %nullFocus;
+    max-height: 90px;
+    font-size: (20em / 16);
+    color: $baseWhite;
+    padding: 16px 77px;
+    border-radius: 22px;
+    background-image: linear-gradient( 0deg, rgb(190,0,0) 0%, rgb(236,102,70) 56%, rgb(246,147,68) 100%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    &:hover{
+        background-image: linear-gradient( 0deg, #d22828 0%, #ee9986 56%, #f7b076 100%);
+    }
+    &:focus{
+        background-image: linear-gradient( 0deg, #be0000 0%, #ec6646 56%, #f69443 100%);
+    }
+    &_small{
+        padding: 15px 45px 20px 45px; 
+        font-size: (18em / 16);
+        letter-spacing: 1px;
+    }
+    &_margin{
+        margin-left: 30px;
+    } 
+    &_lspacing{
+        letter-spacing: 1px;
+    }
+}

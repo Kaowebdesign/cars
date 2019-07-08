@@ -1,0 +1,93 @@
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.wrap{
+    padding: 0 15px;
+}
+.boldOpenSans   {
+    @extend %openSansBold;
+}
+
+.textCenter{
+    @extend %textCenter;
+}
+%autoMargin{
+    margin: 0 auto;
+}
+
+%nullFocus{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+%nullLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+%nullList {
+    list-style: none;
+}
+
+%baseFlex {
+    display: flex;
+}
+
+%columnFlex{
+    flex-direction: column;
+}
+
+%inlineFlex{
+    display: inline-flex;
+}
+
+%flexCenter {
+    justify-content: center;
+}
+
+%flexAlignCenter{
+    align-items: center;
+}
+
+%flexFullCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+%spaceBetween{
+    justify-content: space-between
+}
+
+%textCenter {
+    text-align: center;
+}
+
+%basePosition {
+    position: relative;
+}
+
+%baseAbsolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+%baseTransition {
+    transition: .5s;
+}
+
+%openSansBold{
+    font-family: OpenSans-Bold;
+}
+
+%openSansRegular{
+    font-family: OpenSans-Regular;
+}
+
+%openSansItalic{
+    font-family: OpenSans-Italic;
+}

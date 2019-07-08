@@ -1,0 +1,147 @@
+@media only screen and (min-width:1920px){
+}
+@media only screen and (max-width:1920px) {
+
+}
+
+@media only screen and (max-width:1600px) {
+
+}
+
+@media only screen and (max-width:1140px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .step-items,
+    .footer__wrap,
+    .services,
+    .cont-cards,
+    .telegram{
+        align-items: center;
+    }
+    .header-bottom,
+    .fbottom,
+    .step-items,
+    .footer__wrap,
+    .services,
+    .cont-cards,
+    .telegram{
+        flex-direction: column;
+    }
+    .step-item{
+        max-width: 80%;
+        margin: 20px 0;
+        padding: 0;
+        &__wrap{
+            text-align: center;
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+    .header-center{
+        display: block;
+    }
+    
+    .cars__wrap,
+    .fbottom__item{
+        justify-content: center;
+    }
+    .cont-card,
+    .serv-card{
+        margin-top: 50px;
+    }
+    .map, .fcontact{
+        width: 100%;
+    }
+    .car-card{
+        margin: 15px;
+    }
+    .contact{
+        display: none;
+    }
+    .header-top{
+        border-bottom: 1px solid;
+    }
+    .button_margin{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    body{
+        font-size: 13px;
+    }
+   .header-bottom{
+       text-align: center;
+       &__wrap{
+           padding-bottom: 30px;
+       }
+   }
+   .contactus__input{
+       padding: 5px 15px;
+   }
+   .serv-card{
+       width: 90%;
+   }
+   .logo{
+       margin-bottom: 30px;
+   }
+   .header-top{
+       flex-direction: column;
+       align-items: center;
+   }
+   .lang{
+       justify-content: center;
+   }
+   .telegram_margin{
+       margin: 20px 0 0;
+   }
+}
+
+@media only screen and (max-width:480px) {
+    .tape__text{
+        font-size: (16em / 16);
+    }
+    .tape{
+        width: 80%;
+    }
+    .fcontact_padding{
+        padding: 0 10px 25px;
+    }
+    .fsocial{
+        justify-content: center;
+    }
+    .fsocial_padding,
+    .contact_fwrap{
+        padding: 0;
+    }
+    .ftel{
+        flex-direction: column;
+        align-items:center;
+    }
+    .fcontact__tel,
+    .fmail,
+    .fmap{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .ftel__icon{
+        margin: 10px 0 20px;
+    }
+    .zina{
+        flex-direction: column;
+    }
+    .car-card, 
+    .contactus__input{
+        width: 90%;
+    }
+    .round-button__link{
+        padding: 5px 20px;
+    }
+}

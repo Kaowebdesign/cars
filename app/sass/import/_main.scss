@@ -1,0 +1,370 @@
+.main{
+    @extend %basePosition;
+    @extend %openSansRegular;
+    color: $baseTextBlue;
+    padding-bottom: 100px;
+    &__back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(230,230,230) 100%);
+        height: 217px;
+        z-index: -1;  
+    }
+    &__upBtn{
+        @extend %nullFocus;
+        position: fixed;
+        display: none;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $baseTextBlue;
+        box-shadow: 0px 0px 20px 2px #fff;
+        cursor: pointer;
+        z-index: 100;
+        @include backImg('img/arrow-up.png',70%,center);
+    }
+}
+
+.services{
+    width: 100%;
+    @extend %baseFlex;
+    justify-content: center;
+    margin-top: -28px;
+}
+.serv-card{
+    @extend %basePosition;
+    padding: 37px 8px 30px;
+    @extend %textCenter;
+    border: 1px solid $servBorder;
+    width: 448px;
+    min-height: 275px;
+    background-color: $baseWhite;
+
+    &:hover &__link{
+        text-decoration: underline;
+    }
+    &_mtop{
+        margin-top: 40px;
+    }
+    &_mside{
+        margin: 0 13px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 0px 20px rgba(0,0,0,.47);
+        }
+    }
+    &_blue{
+        background-color: $baseTextBlue;
+    }
+    &_red{
+        background-color: $selectColor;
+    }
+    &_bold{
+        @extend %openSansBold;
+        text-transform: uppercase;
+    }
+    &__star{
+        position: absolute;
+        top: -37px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+    }
+    &__title{
+        color: $selectColor;
+        font-size: (28em / 16);
+    }
+    &__link{
+        display: block;
+        margin-top: 30px;
+        color: $selectColor;
+        font-size: (16em / 16);
+        letter-spacing: 1px;
+    }
+}
+.tape{
+    @extend %baseFlex;
+    @extend %flexFullCenter;
+    width: 329px;
+    height: 60px;
+    margin: 20px auto;
+    &_bg{
+        font-size: (28em / 16);
+    }
+    &_white{
+        @include backImg('img/svg/zcars_lenta_white_330x60.svg',auto,center);
+    }
+    &_blue{
+        color: $baseWhite;
+        padding-bottom: 5px;
+        @include backImg('img/svg/zcars_lenta_blu_330x60.svg',auto,center);
+    }
+    &__text{
+        font-size: (18em /16);
+    }
+    
+}
+
+.steps{
+    @extend %textCenter;
+    padding: 70px 0;
+    &_mbottom{
+        margin-bottom: 50px;
+    }
+    &__wrap{
+        padding: 30px 0;
+    }
+}
+.step-items{
+    @extend %baseFlex;
+    @extend %spaceBetween;
+    &_wrap{
+        flex-wrap: wrap;
+    }
+}
+.step-item{
+    padding-right: 8px;
+    &_mwidth{
+        @extend %textCenter;
+    }
+    &_rpadding{
+        padding-right: 15px;
+    }
+    &_npadding{
+        padding: 0;
+    }
+    &_max{
+        max-width: 18%;
+    }
+    &__arrow{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &_after{
+        width: 12px;
+    }
+    &__img{
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    &__content{
+        @extend %textCenter;
+    }
+    &__wrap{
+        @extend %basePosition;
+        @extend %baseFlex;
+        text-align: left;   
+    }
+    &__text{
+        @extend %openSansBold;
+        font-size: (17em / 16);
+    }
+}
+
+.title{
+    font-size: (30em / 16);
+    text-transform: uppercase;
+    &_red{
+        color: $selectColor;
+    }
+    &_bold{
+        @extend %openSansBold;
+    }
+    &_big{
+        font-size: (34em / 16);
+    }
+    &_fweight{
+        font-weight: 300;
+    }
+}
+.cars{
+    @extend %textCenter;
+    &__wrap{
+        @extend %baseFlex;
+        @extend %spaceBetween;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+    padding-bottom: 30px;
+}
+.car-card{
+    @extend %baseTransition;
+    @extend %textCenter;
+    width: 340px;
+    padding-bottom: 30px;
+    margin: 25px 0;
+    box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.23);
+    &:hover{
+        box-shadow: 0px 1px 27px 0px rgba(0, 0, 0, 0.49); 
+    }
+    &_hide{
+        display: none;
+    }
+    &__wrap{
+        overflow: hidden;
+        max-width: 340px;
+        height: 190px;
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__caption{
+        @extend %openSansBold;
+        font-size: (21em / 16);
+    }
+    &__price{
+        font-size: (30em / 16); 
+        color: $selectColor;
+        margin: 15px 0;
+        &::before{
+            content: "$";
+        }
+    }
+}
+
+.round-button{
+    display: inline-block;
+    border-radius: 25px;
+    padding: 3px;
+    background-image: linear-gradient(0deg, #be0000 0%, #ec6646 56%, #f69344 100%);
+    &_orange{
+        background: transparent;
+        color: $baseWhite;
+        &:hover{
+            background-image: linear-gradient( 0deg, #d22828 0%, #ee9986 56%, #f7b076 100%);
+        }
+    }
+    &_white{
+        background: #fff;
+        color: #be0000;
+        &:hover{
+            background: transparent;
+            color: $baseWhite;
+        }
+    }
+    &__link{
+        @extend %baseTransition;
+        display: inline-block;
+        padding: 13px 40px;
+        border-radius: 25px;
+    }
+    
+}
+
+.telegram{
+    @extend %baseFlex;
+    @extend %flexFullCenter;
+    @extend %baseTransition;
+    padding-bottom: 25px;
+    &:hover &__img{
+        opacity: .5;
+    }
+    &_margin{
+        margin:10px 0 10px 40px;
+    }
+    &__wrap{
+        @extend %textCenter;
+    }
+    &__text{
+        font-size: (24em / 16);
+    }
+    &__logo{
+        @extend %baseFlex;
+        @extend %columnFlex;
+        @extend %flexFullCenter;
+        @extend %textCenter;
+        padding: 25px;
+        max-width: 195px;
+        border: 1px solid rgb(192, 192, 192);  
+        padding: 12px 25px;
+    }
+    &__link-text{
+        text-decoration: underline;
+        margin-top: 10px;
+        &:hover{
+            color: $selectColor;
+            text-decoration: none;
+        }
+    }
+}
+
+.cont{
+    padding-top: 80px;
+}
+.cont-cards{
+    @extend %baseFlex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.cont-card{
+    margin-top: 36px;
+    padding: 50px 20px 60px;
+    width: 345px;
+    min-height: auto;
+    &__text{
+        @extend %openSansBold;
+        font-size: (24em / 16);
+        margin: 10px 0;
+    }
+}
+.contact-form{
+    @extend %basePosition;
+    @extend %textCenter;
+}
+.contact-form-duo{
+    @extend %basePosition;
+    @extend %textCenter;
+    @extend %openSansRegular;
+    color: $baseTextBlue;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 0;
+    border-radius: 22px;
+}
+.contactus{
+    &_mtop{
+        padding-top: 10px;
+    }
+    &_outline{
+        outline: 0;
+        outline-offset: 0;
+    }
+    &__list{
+        @extend %nullList;
+    }
+    &__item{
+        margin: 20px 0;
+    }
+    &__input{
+        @extend %openSansRegular;
+        @extend %textCenter;
+        font-size: (24em / 16);
+        padding: 15px 110px;
+        border: 1px solid rgb(192, 192, 192); 
+        border-radius: 25px;   
+        color: $baseTextBlue;
+        @include placeholder{
+            color: $baseTextBlue;
+        }
+    }
+    &__send{
+        padding:10px 40px;
+    }
+}
+.map{
+    &__frame{
+        width: 100%;
+        height: 100%;
+    }
+}
