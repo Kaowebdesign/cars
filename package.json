@@ -30,7 +30,7 @@
     "gulp-svgmin": "^1.2.3",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.0",
-    "pug": "^2.0.0-beta11",
+    "pug": "^3.0.1",
     "uglifyjs": "^2.4.10"
   },
   "dependencies": {
